@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+/*
+    font-family: 'Cookie', cursive;
+
+    font-family: 'Poppins', sans-serif;
+
+*/
+
+
+/* スタイルリセット */
+html, body, div, h1, h2, h3, h4, h5, h6, p, img, b, i, ul, li, article, nav, section, summary, footer, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+footer, header, nav {
+  display: block;
+}
+
+html {
+  font-size: 62.5%; /* フォントの基準サイズを10pxにする */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif; /* 全体の書体を指定する */
+  font-size: 1.4rem; /* 全体のフォントサイズは14pxとする */
+  line-height: 1; /* 行間を指定する */
+  -webkit-text-size-adjust: 100%; /*スマホでPC表示した際に勝手に文字が大きくなるのを防ぐ*/
+}
+
+body * {
+  background-repeat: no-repeat; /* 背景画像は基本リピートしない */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+/* スタイルリセット終わり */
+
+
+
+/* PC用CSS */
+body {
+  background-color: #333;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo img {
+  margin: auto;
+  height: 70px;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.1));
+}
+
+.logo {
+  padding: 50px 0px 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Cookie', cursive;
+  font-size: 23px;
+  color: white;
+  opacity: 0.9;
+}
+
+header h2 {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 10px 0px 10px;
+}
+
+nav {
+  text-align: center;
+}
+
+.global-nav {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.global-nav li {
+float:left;
+margin: 90px auto;
+}
+
+
+/* +隣接セレクタで縦線で区切る */
+.global-nav li+li {
+  border-left: 1px solid #fff;
+}
+
+.global-nav li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 28px;
+  padding: 5px 30px;
+  margin: 10px
+}
+
+.global-nav li a:hover{
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+}
+
+.button a {
+  color: #faf2e8;
+  background-color: #ffa883;
+  font-size: 20px;
+  width: 170px;
+  text-align: center;
+  line-height: 40px;
+  margin: 15vh auto 0;
+  border-radius: 8px;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
+}
+
+
+
+.scroll {
+  text-align: center;
+  color: white;
+  margin: 25px 0px 20px
+}
+
+.scroll p {
+ font-weight: lighter;
+  padding: 2px;
+}
+
+.coding, .twodcg, .threedcg, .dtm {
+  padding: 50px;
+}
+
+.about {
+  padding-bottom: 15vh;
+  padding-left: 40px;
+}
+
+.bg-slider {
+  height: 100vh;
+  background: #6fc7e1;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.coding {
+  background: linear-gradient(-45deg, rgba(10, 10, 10, 0.8), rgba(30, 30, 30, 0.3)), url(images/code.jpg); 
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.twodcg {
+  background: linear-gradient(-45deg, rgba(10, 10, 10, 0.8), rgba(30, 30, 30, 0.3)), url(images/2D.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.threedcg {
+  background: linear-gradient(-45deg, rgba(10, 10, 10, 0.8), rgba(30, 30, 30, 0.3)),  url(images/D.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.dtm {
+  background: linear-gradient(-45deg, rgba(10, 10, 10, 0.8), rgba(30, 30, 30, 0.3)),  url(images/dtm.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.faq {
+  background: #ffa883;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.twitter {
+  background: #00aced;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.about {
+  background: #6fc7e1;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact {
+  background-color: #6fc7e1;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+span.under {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 3px;
+}
+
+/* 別けて描かないとmaxwidthが上手くいかぬ */
+.coding p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.twodcg p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.threedcg p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.dtm p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.faq p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.faq h1 {
+  color: #fff;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.twitter p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 2;
+  color: white;
+}
+
+.about .intro p{
+  padding: 0px;
+  font-size: 45px;
+  padding-top: 10px;
+  color: #666;
+}
+
+.contact a.link {
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-size: 17px;
+  margin: 40px auto 20px;
+}
+
+
+.faq, .contact, .twitter {
+  padding: 50px;
+  text-align: center;
+}
+
+.toplogo {
+  margin: auto;
+  margin-top: 5vh;
+  width: 250px;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.1));
+}
+
+.controller {
+  margin: auto;
+  width: 120px;
+  margin-top: 5vh;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.1));
+}
+
+.setsumeibg p {
+  color: #444;
+}
+
+.map {
+  width: 250px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+.big {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.setsumeibg {
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  filter: drop-shadow(0px 3px 6px rgba(0,0,0,0.2));
+}
+/* PC用CSS終わり */
+
+
+/* スマホ用CSS */
+@media screen and ( max-width:479px ) {
+  .logo {
+  padding: 50px 0px 20px;
+  }
+  
+  .global-nav li {
+float:left;
+margin: 50px auto;
+}
+  
+  .coding, .twodcg, .threedcg, .dtm, .contact, .faq, .twitter {
+  max-width: 540px;
+  margin: auto;
+  line-height: 2;
+  font-size: 14px;
+  color: white;
+  padding: 30px;
+}
+  
+  .about {
+    position: relative;
+    height: 535px;
+  }
+  
+  .about .aboutbg {
+    position: absolute;
+    top: -50px;
+  }
+  
+  .about p {
+    max-width: 540px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .about .aboutbg {
+    background: #fff;
+    padding: 10px;
+    padding-right: 30px;
+    filter: drop-shadow(-3px 3px 6px rgba(0,0,0,0.2));
+  }
+  
+  .global-nav li a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  margin: 12px
+}
+  
+header h2 {
+  color: #faf2e8;
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 50px 0px 30px;
+}
+
+}
+/* スマホ用CSS終わり */
